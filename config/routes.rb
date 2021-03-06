@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   namespace :api do
     get "/album" => "album#index"
     post "/album" => "album#create"
-    get "/album" => "album#show"
-    patch "/album" => "album#update"
-    delete "/ablum" => "album#destroy"
+    get "/album:id" => "album#show"
+    patch "/album:id" => "album#update"
+    delete "/album:id" => "album#destroy"
   end
 end

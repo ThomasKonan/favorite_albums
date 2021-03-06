@@ -5,3 +5,4 @@
   artist: album.artist,
   year: album.year,
 }
+end

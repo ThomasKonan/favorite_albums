@@ -1,4 +1,4 @@
-class Api::AlbumsController < ApplicationController
+class Api::AlbumController < ApplicationController
   def index
     @albums = Album.all
     render "index.json.jb"
@@ -31,6 +31,6 @@ class Api::AlbumsController < ApplicationController
   def destroy
     @album = Album.find_by(id: params[:id])
     @album.destroy
-    render json: {message: "Album has been successfully destroyed."}
+    render json: { message: "Album has been successfully destroyed." }
   end
 end
